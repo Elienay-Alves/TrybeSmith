@@ -1,4 +1,4 @@
-import ProductInterface from '../interfaces';
+import ProductInterface from '../interfaces/products';
 import * as ProductModel from '../models/Products';
 
 export const create = async (name: string, amount: string): Promise<ProductInterface> => {
