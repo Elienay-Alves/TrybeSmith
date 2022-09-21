@@ -11,6 +11,13 @@ export const create = async (product: ProductInterface): Promise<number> => {
   return insertId;
 };
 
+export const getAll = async (): Promise<ProductInterface[]> => {
+  const query = 'SELECT * FROM Trybesmith.Products';
+  const [result] = await db.execute(query);
+
+  return result as ProductInterface[];
+};
+
 export default {
   create,
 };

@@ -9,6 +9,12 @@ export const create = async (name: string, amount: string): Promise<ProductInter
   return add;
 };
 
+export const getAll = () => {
+  const result = ProductModel.getAll();
+
+  return result;
+};
+
 export default {
   create,
 };
