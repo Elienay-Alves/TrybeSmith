@@ -1,5 +1,5 @@
 import ProductInterface from '../interfaces';
-import ProductModel from '../models/Products';
+import * as ProductModel from '../models/Products';
 
 export const create = async (name: string, amount: string): Promise<ProductInterface> => {
   const add = { name, amount } as ProductInterface;
